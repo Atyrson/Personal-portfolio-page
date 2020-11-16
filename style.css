@@ -1,0 +1,296 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+/*Header*/
+nav {
+    background-color: #be3144;
+    height: 70px;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    width: 100%;
+}
+
+#navbar ul {
+    padding: 0;
+    display: flex;
+    margin: 0;
+    width: 350px;
+    justify-content: center;
+}
+
+li {
+    list-style-type: none;
+    display: flex;
+}
+
+#navbar li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 23px;
+    padding: 24px
+}
+
+#navbar li a:hover {
+    background-color: #45567D;
+}
+/*End of Header*/
+
+
+
+/*Welcome Section*/
+#welcome-section {
+    height: 100vh;   
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+    flex-direction: column;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    font-size: 4rem;
+    margin-bottom: 0;
+}
+
+#welcome-section p {
+    margin-top: 10px;
+    font-size: 2rem;
+    color: #be3144;
+    font-style: italic;
+}
+/*End of Welcome Section*/
+
+
+
+/*Projects Section*/
+#projects {
+    background-color: #45567D;
+    margin: 0;
+}
+
+.h2-text {
+    display: flex;
+    justify-content: center;
+}
+
+#projects h2 {
+    max-width: 640px;
+    margin: 0;
+    padding-top: 100px;
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+
+.project-tile {
+    background-color: red;
+    width: 380px;
+    height: 340px;
+    margin: 10px;
+    margin-bottom: 70px;
+}
+
+.image {
+    width: 100%;
+    height: 340px;
+    background-image: url("https://s2.glbimg.com/SdHUIIqJPMfSUBMVmAE3h4RMO5g=/512x320/smart/e.glbimg.com/og/ed/f/original/2016/03/14/albert-einstein-wikipedia.jpg");
+    background-size: cover;
+}
+
+#image2 { background-image: url("https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/random-quote-machine.png");}
+#image3 { background-image: url("https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/calc.png");}
+#image4 { background-image: url("https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/map.jpg");}
+#image5 { background-image: url("https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/wiki.png");}
+#image6 { background-image: url("https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tic-tac-toe.png");}
+
+.clicavel {
+    text-decoration: none;
+}
+
+
+a p {
+    background-color: #303841;
+    font-size: 20px;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+button {
+    padding: 12px 40px 12px 40px;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    background-color: #303841;
+    transition: 0.4s;
+    margin-bottom: 80px;
+}
+
+button:hover {
+    background-color: #be3144;
+}
+/*Enf of Projects Section*/
+
+
+
+/*Contact Section*/
+
+
+#contact ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 0;
+    
+}
+
+#contact li {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#contact ul a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 22px;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+    text-shadow: 1px 1px 4px black;
+    transition: transform 0.3s ease-out;
+}
+
+#contact ul a:hover {
+    transform: translateY(8px)
+}
+
+.contact-container {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact {
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact p {
+    font-weight: 100;
+    font-style: italic;
+    font-family:  "poppins";
+    font-size: 18px;
+    padding-bottom: 15px;
+}
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    font-size: 4rem;    
+    margin-bottom: 0;
+}
+
+
+
+.bottom {
+    background-color: #303841;
+    color: #fff;
+}
+
+
+.footer-container {
+    height: 30vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    padding: 30px;
+    justify-content: space-evenly;
+    border-top: 4px solid #be3144;
+}
+
+footer p a {
+    text-decoration: none;
+    color: inherit;
+}
+/*End of Contact Section*/
+
+
+
+/*Media Query*/
+
+@media (max-width: 604px) {
+    h2 {
+        text-align: center;
+    }
+
+    #projects h2 {
+        border: none;
+    }
+
+    #contact h2 {
+        font-size: 37px;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    #contact ul {
+        flex-direction: column;
+        
+    }
+
+    #contact li {
+        padding: 10px 0 10px 0;
+    }
+
+    footer {
+       flex-direction: column;
+       padding: 0;
+       align-items: center;
+       padding-top: 20px;
+    }
+
+    #first {
+        text-align: center;
+    }
+}
+
+
